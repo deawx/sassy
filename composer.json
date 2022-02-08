@@ -1,0 +1,41 @@
+{
+    "name": "idimensionz/web-socket-app-server",
+    "description": "Websocket app server based on Ratchet",
+    "keywords": ["web socket","event-loop","php"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jim Mullen",
+            "email": "info@idimensionz.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4||^8",
+        "cboden/ratchet": "^0.4",
+        "ext-json": "*",
+        "idimensionz/common": "^1.0",
+        "symfony/event-dispatcher": "^6.0",
+        "symfony/dependency-injection": "^6.0",
+        "symfony/config": "^6.0",
+        "symfony/yaml": "^6.0",
+        "symfony/proxy-manager-bridge": "^6.0",
+        "symfony/uid": "^6.0",
+        "symfony/console": "^6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5||^8||^9",
+        "phake/phake": "^3.1",
+        "phpstan/phpstan": "^1.4",
+        "friendsofphp/php-cs-fixer": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "iDimensionz\\AppServer\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    }
+}

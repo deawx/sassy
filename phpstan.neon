@@ -1,0 +1,17 @@
+includes:
+	- phpstan-baseline.neon
+
+parameters:
+	level: 2
+	paths:
+		- src
+		- tests
+
+	ignoreErrors:
+#		- "#^Call to an undefined method Phake\\\\Proxies\\\\StubberProxy\\:\\:.*\\(\\)\\.$#"
+#		- "#^Call to an undefined method Phake\\\\Proxies\\\\VerifierProxy\\:\\:.*\\(\\)\\.$#"
+#		- "#^Parameter \\#[0-9] \\$mock of static method Phake\\:\\:verify\\(\\) expects Phake\\\\IMock, .* given\\.$#"
+#		- "#^Parameter \\#[0-9] \\$mock of static method Phake\\:\\:when\\(\\) expects Phake\\\\IMock, .* given\\.$#"
+#		- "#^Access to an undefined property Ratchet\\ConnectionInterface\\:\\:\\$username\\.$#"
+	#symfony:
+	#	container_xml_path: var/cache/dev/srcKernelDevDebugContainer.xml

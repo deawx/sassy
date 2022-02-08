@@ -1,0 +1,42 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Access to an undefined property Ratchet\\\\ConnectionInterface\\:\\:\\$resourceId\\.$#"
+			count: 1
+			path: src/Message/AbstractBaseMessage.php
+
+		-
+			message: "#^Access to an undefined property Ratchet\\\\ConnectionInterface\\:\\:\\$currentTopic\\.$#"
+			count: 1
+			path: src/Message/Base/TextMessage.php
+
+		-
+			message: "#^Access to an undefined property Ratchet\\\\ConnectionInterface\\:\\:\\$resourceId\\.$#"
+			count: 2
+			path: src/Server/AbstractAppServer.php
+
+		-
+			message: "#^Access to an undefined property Ratchet\\\\ConnectionInterface\\:\\:\\$currentTopic\\.$#"
+			count: 1
+			path: src/Subscriber/ServerConnectOnOpenSubscriber.php
+
+		-
+			message: "#^Access to an undefined property Ratchet\\\\ConnectionInterface\\:\\:\\$resourceId\\.$#"
+			count: 2
+			path: src/Subscriber/ServerConnectOnOpenSubscriber.php
+
+		-
+			message: "#^Access to an undefined property Ratchet\\\\ConnectionInterface\\:\\:\\$username\\.$#"
+			count: 1
+			path: src/Subscriber/ServerConnectOnOpenSubscriber.php
+
+		-
+			message: "#^Access to an undefined property Ratchet\\\\ConnectionInterface\\:\\:\\$currentTopic\\.$#"
+			count: 1
+			path: src/Topic/TopicManager.php
+
+		-
+			message: "#^PHPDoc tag @var has invalid value \\(\\$loader \\\\Composer\\\\Autoload\\\\ClassLoader\\)\\: Unexpected token \"\\$loader\", expected type at offset 9$#"
+			count: 1
+			path: tests/bootstrap.php
+
