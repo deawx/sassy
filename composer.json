@@ -1,6 +1,6 @@
 {
-    "name": "idimensionz/web-socket-app-server",
-    "description": "Websocket app server based on Ratchet",
+    "name": "idimensionz/sassy",
+    "description": "Extensible websocket app server driven by 'self-processing' messages",
     "keywords": ["web socket","event-loop","php"],
     "license": "MIT",
     "authors": [
